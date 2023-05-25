@@ -19,6 +19,8 @@ keymap('n', 'L', '$', opts)
 keymap('n', 'H', '^', opts)
 keymap('n', '<leader>p', '\"*p', opts)
 
+keymap('v', 'L', '$', opts)
+keymap('v', 'H', '^', opts)
 keymap('v', 'K', '3k', opts)
 keymap('v', 'J', '3j', opts)
 keymap('v', '<leader>y', '\"*y', opts)
@@ -29,4 +31,3 @@ if vim.g.vscode then
     --     ]], false)
 else
 end
-
