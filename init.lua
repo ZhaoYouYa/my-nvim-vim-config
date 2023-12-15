@@ -26,6 +26,9 @@ keymap('n', '<C-v>', '\"*p', opts)
 -- when mouse double click a word replace them with '<C-v>', this use for copy from other place
 keymap('v', '<C-v>', 'd<Esc>\"*P', opts)
 
+-- use ctrl-c for copy
+keymap('v', '<C-c>', '\"*y`>', opts)
+
 keymap('v', 'L', '$', opts)
 keymap('v', 'H', '^', opts)
 keymap('v', 'K', '3k', opts)
@@ -42,4 +45,7 @@ if vim.g.vscode then
     --     nnoremap <leader>c <Cmd>call VSCodeNotify('workbench.action.terminal.toggleTerminal')<CR>
     --     ]], false)
 else
+vim.opt.number = true
+vim.opt.termguicolors = true
+vim.cmd[[colorscheme evening]]
 end
