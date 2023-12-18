@@ -44,6 +44,7 @@ local vscode = require('vscode-neovim')
 -- vscode.call("bing-search.commandPaletteBingSearch")
 vim.keymap.set('n','<leader>s',function() vscode.call("bing-search.commandPaletteBingSearch") end,opts)
 vim.keymap.set('n','<leader>e',function() vscode.call("workbench.explorer.fileView.focus") end,opts)
+vim.keymap.set('n','<leader>c',function() vscode.call("workbench.action.closeActiveEditor") end,opts)
 else
 
 -- use ctrl-c for copy to system
